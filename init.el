@@ -28,6 +28,9 @@
 ;;; package elpy for python
 (elpy-enable)
 
+;;; configure elpy to use python3
+(setq elpy-rpc-python-command "/usr/local/bin/python3")
+
 (setq completion-ignore-case  t)
 
 (setq shell-command-switch "-ic")
@@ -40,7 +43,8 @@
 
 ;;; enabled rebecca theme
 ;;; (load-theme #'rebecca t)
-(load-theme 'yoshi :no-confirm)
+;;; (load-theme 'yoshi :no-confirm)
+(load-theme 'atom-one-dark t)
 
 ;;; git package
 ;;; (require 'git)
@@ -53,7 +57,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("6c7db7fdf356cf6bde4236248b17b129624d397a8e662cf1264e41dab87a4a9a" "4e4d9f6e1f5b50805478c5630be80cce40bee4e640077e1a6a7c78490765b03f" default)))
+    ("a4c9e536d86666d4494ef7f43c84807162d9bd29b0dfd39bdf2c3d845dcc7b2e" "6c7db7fdf356cf6bde4236248b17b129624d397a8e662cf1264e41dab87a4a9a" "4e4d9f6e1f5b50805478c5630be80cce40bee4e640077e1a6a7c78490765b03f" default)))
  '(package-selected-packages (quote (flymake-python-pyflakes flycheck auto-complete))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
